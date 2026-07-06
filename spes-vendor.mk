@@ -240,7 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
-    vendor/xiaomi/spes/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
@@ -254,7 +253,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.battery_stats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.battery_stats.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -416,8 +414,163 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/firmware/a610_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.elf \
     vendor/xiaomi/spes/proprietary/vendor/firmware/a610_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.mdt \
     vendor/xiaomi/spes/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b08 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b09 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b10 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b12 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b13 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b14 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b15 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b16 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b17 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b18 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b19 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b20 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b21:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b21 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b22:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b22 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b23:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b23 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b24:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b24 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b25:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b25 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b26:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b26 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b27:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b27 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b28:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b28 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b29:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b29 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b30:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b30 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b31:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b31 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b32:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b32 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b33:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b33 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b34:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b34 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.b35:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b35 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adspr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/adspr.jsn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adsps.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/adsps.jsn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/adspua.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/adspua.jsn \
     vendor/xiaomi/spes/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tgl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tgl.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tglu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tglu.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tin.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tinu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tinu.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tmx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tmx.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tmxu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tmxu.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tsku.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tsku.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bd7tskuu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bd7tskuu.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdm7eu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bdm7eu.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdm7euu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bdm7euu.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.102:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.102 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.104:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.104 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.105:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.105 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.106:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.106 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.107:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.107 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.108:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.108 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.109:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.109 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.10e:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.10e \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.10f:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.10f \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.111:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.111 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.202:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.202 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.203:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.203 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.204:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.204 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.206:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.206 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b09 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b0a:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b0a \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b0b:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b0b \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b0d:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b0d \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b0e:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b0e \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b0f:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b0f \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b14 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b15 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b30:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b30 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b31:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b31 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b32:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b32 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b33:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b33 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b34:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b34 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b35:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b35 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b36:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b36 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b37:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b37 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.b38:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.b38 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlant.202:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlant.202 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlanu.202:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlanu.202 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/bdwlanu.206:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlanu.206 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cardapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cardapp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b08 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b09 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b11 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdsp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/cdspr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/cdspr.jsn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/data.msc \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/featenab.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/featenab.mdt \
     vendor/xiaomi/spes/proprietary/vendor/firmware/focaltech_ts_fw_samsung.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_samsung.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/fpctzapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptauuid.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gptauuid.xml \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/gptest.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/gptest.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/haventkn.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/haventkn.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/hdcpsrm.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcpsrm.mdt \
     vendor/xiaomi/spes/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/xiaomi/spes/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/xiaomi/spes/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -425,626 +578,470 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/xiaomi/spes/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/xiaomi/spes/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/loadalgo.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/loadalgo.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mfido.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/mfido.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/miriskm.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/miriskm.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/mlipay.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/mlipay.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b08 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b09 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b10 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b11 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b12 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b14 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b15 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b16 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b17 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b18 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b19 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b22:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b22 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b23:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b23 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b24:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b24 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b25:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b25 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b26:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b26 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b27:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b27 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b28:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b28 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.b29:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.b29 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/cmcc_sub/sr_dsds/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/cmcc_sub/sr_dsds/mcfg_hw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/7+7_mode/sr_dsds/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/7+7_mode/sr_dsds/mcfg_hw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/ss/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/ss/mcfg_hw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.txt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/af/cellc/commerci/safrica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/af/cellc/commerci/safrica/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/af/morocco/orange/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/af/morocco/orange/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/af/moroccot/commerci/ma/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/af/moroccot/commerci/ma/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/cellcom/commerci/israel/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/cellcom/commerci/israel/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dialog/commerci/sl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dialog/commerci/sl/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/htmobile/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/htmobile/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/idea/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/idea/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/jazz/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/jazz/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/mobitel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/mobitel/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ntc/commerci/nepal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ntc/commerci/nepal/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ooredoo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ooredoo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/partner/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/partner/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/pelephon/commerci/israel/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/pelephon/commerci/israel/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/rakuten/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/rakuten/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/telenor/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/telenor/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/uzmobile/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/uzmobile/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/zong/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/zong/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/optus/commerci/au/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/optus/commerci/au/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/telstra/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/telstra/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/vodafone/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/vodafone/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_cm/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_cm/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_op/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_op/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/agnss_lo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/agnss_lo/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/conf_vol/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/conf_vol/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/eps_only/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/eps_only/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/lpp_loct/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/lpp_loct/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_4r/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_4r/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_vo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_vo/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/rrlp_loc/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/rrlp_loc/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/tgl_comb/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/tgl_comb/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/w_irat_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/w_irat_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/hvolte_o/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/hvolte_o/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/openmkt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/openmkt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/volte_op/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/volte_op/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/cta/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/cta/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/eps_only/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/eps_only/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/noapn_vo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/noapn_vo/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_eps/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_eps/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_no_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_no_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/volte_co/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/volte_co/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ctm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ctm/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/openmkt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/openmkt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/volte/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/lab/test/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/lab/test/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/test/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/test/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/1and1/commerci/de/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/1and1/commerci/de/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/2degress/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/2degress/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/at_comme/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/at_comme/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/bulgaria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/bulgaria/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/slovenia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/slovenia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/croatia_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/croatia_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/macedoni/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/macedoni/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/serbia_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/serbia_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bhteleco/commerci/ba/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bhteleco/commerci/ba/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/latvia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/latvia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/lithuani/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/lithuani/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bouygues/commerci/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bouygues/commerci/france/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/coop/commerci/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/coop/commerci/italy/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/cosmote/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/cosmote/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/digi/romania_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/digi/romania_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/austria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/austria/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/croatia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/croatia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/cz/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/cz/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/greece/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/greece/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/hungary/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/hungary/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/macedoni/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/macedoni/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/nl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/nl/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/pl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/pl/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/slovakia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/slovakia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/non_volt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/non_volt/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/romania_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/romania_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/du/commerci/uae/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/du/commerci/uae/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/eir/commerci/ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/eir/commerci/ireland/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/estonia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/estonia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/fi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/fi/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/egypt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/uae/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/uae/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/free/volte/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/free/volte/france/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/gibtel/commerci/gibra/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/gibtel/commerci/gibra/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/austria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/austria/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/denmark/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/ireland/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/italy/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/se/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/se/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/uk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ice/commerci/norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ice/commerci/norway/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kpn/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kpn/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kyvistar/volte/ukraine/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kyvistar/volte/ukraine/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lifecell/volte/ukraine/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lifecell/volte/ukraine/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lmt/commerci/latvia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lmt/commerci/latvia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/meo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/meo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/moldcell/commerci/moldova/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/moldcell/commerci/moldova/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mtn/commerci/safrica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mtn/commerci/safrica/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/commerci/belarus/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/commerci/belarus/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/volte/serbia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/volte/serbia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/nos/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/nos/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/czech/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/czech/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/slovakia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/slovakia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/uk_comme/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/uk_comme/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ora/commerci/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ora/commerci/france/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/belgium/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/belgium/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/egypt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/france/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/group_no/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/group_no/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/luxembou/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/luxembou/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/poland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/poland/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/romania/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/romania/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/slovakia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/slovakia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/spain/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/moldova_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/moldova_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/play/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/play/poland_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/plus/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/plus/poland_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/post/commerci/luxembou/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/post/commerci/luxembou/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/volte/luxembou/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/volte/luxembou/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/altice/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/altice/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/fr/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/fr/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/spark/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/spark/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sunrise/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sunrise/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/swisscom/commerci/swiss/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/swisscom/commerci/swiss/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tdc/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tdc/commerci/denmark/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/nl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/nl/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/sweden/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/de/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/de/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/spain/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/uk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/non_volt/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/non_volt/spain/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/argentin/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/argentin/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/slovenia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/slovenia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telemach/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telemach/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenet/volte/belgium/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenet/volte/belgium/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/bulgaria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/bulgaria/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/denmark/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/finland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/finland/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/hungary/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/hungary/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/monteneg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/monteneg/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/myanmar/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/myanmar/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/norway/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/serbia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/serbia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/sweden/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/denmark/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/estonia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/estonia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/finland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/finland/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/lithuani/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/lithuani/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/norway/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/sweden/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tim/commerci/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tim/commerci/italy/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tmo/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tmo/poland_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turkcell/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turkcell/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turktele/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turktele/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/virgin/commerci/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/virgin/commerci/uk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vivacom/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vivacom/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/albania/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/albania/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/hungary/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/hungary/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/ireland/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/india_vo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/india_vo/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/non_volt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/non_volt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ctc/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ctc/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/cz/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/cz/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/egypt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/germany/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/germany/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/gr/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/gr/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/italy/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/netherla/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/netherla/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/portugal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/portugal/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ro/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ro/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/safrica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/safrica/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/spain/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/turkey/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/turkey/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/uk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/we/commerci/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/we/commerci/egypt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/wind/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/wind/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/yoigo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/yoigo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/kt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/kt/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/lgu/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/lgu/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/skt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/skt/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/tta/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/korea/tta/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/commerci/mx/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/commerci/mx/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/non_volt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/non_volt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/volte/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/antel/uy/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/antel/uy/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/arg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/arg/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/brazil/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/brazil/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/chile/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/chile/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/colombia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/colombia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/cri/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/cri/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/dominica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/dominica/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/ecuador/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/ecuador/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/guatemal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/guatemal/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/honduras/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/honduras/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/nicaragu/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/nicaragu/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/panama/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/panama/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/peru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/peru/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/puerto/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/puerto/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/salvador/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/salvador/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/uruguay/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/uruguay/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/chile/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/chile/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/peru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/peru/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/argentin/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/argentin/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/chile_co/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/chile_co/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/ecuador_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/ecuador_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/mx_comme/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/mx_comme/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/panama_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/panama_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/uruguay_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/uruguay_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/mx-att/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/mx-att/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/colombia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/colombia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/peru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/peru/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/guatemal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/guatemal/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tim/commerci/brazil/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tim/commerci/brazil/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/vivo/commerci/brazil/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/vivo/commerci/brazil/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/colombia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/colombia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/bahrain_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/bahrain_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/betelco_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/betelco_/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/viva/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/viva/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/zain/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/zain/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/cyta/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/cyta/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/epic/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/epic/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/orange/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/orange/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/umniah/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/umniah/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/ooredoo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/ooredoo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/viva/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/viva/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/zain/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/zain/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/omantel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/omantel/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/ooredoo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/ooredoo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/qatar/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/qatar/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/mobily/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/mobily/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/salam/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/salam/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/zain/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/zain/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/stc/commerci/sa/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mea/stc/commerci/sa/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/altan/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/altan/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/axtel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/axtel/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/american/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/american/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/firstnet/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/firstnet/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/guam_cnm/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/guam_cnm/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/non_volt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/non_volt/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/bell/commerci/ca/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/bell/commerci/ca/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/cbrs/commerci/us/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/cbrs/commerci/us/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/dish/commerci/us/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/dish/commerci/us/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/rogers/commerci/ca/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/rogers/commerci/ca/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/vowifi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/vowifi/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/telus/commerci/ca/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/telus/commerci/ca/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/poland_c/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/uscc/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/uscc/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/imsless/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/imsless/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/beeline/gen_3gpp/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/beeline/gen_3gpp/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/megafon/commerci/ru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/megafon/commerci/ru/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/motiv/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/motiv/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/ru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/ru/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/sberbank/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/sberbank/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/tele2/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/russia/tele2/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/3hk/commerci/hk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/3hk/commerci/hk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/airtel/commerci/lanka/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/airtel/commerci/lanka/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ais/commerci/thailand/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ais/commerci/thailand/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/apt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/apt/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/celcom/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/celcom/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/chunghwa/commerci/tw/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/chunghwa/commerci/tw/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/cuhk/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/cuhk/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/digi/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/digi/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dito/commerci/ph/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dito/commerci/ph/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/th/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/th/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/volte/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/fareasto/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/fareasto/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/globe/commerci/ph/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/globe/commerci/ph/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/hkt/commerci/hk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/hkt/commerci/hk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/indosat/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/indosat/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/m1/commerci/sg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/m1/commerci/sg/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/maxis/commerci/malaysia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/maxis/commerci/malaysia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/metfone/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/metfone/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mpt/commerci/myanmar/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mpt/commerci/myanmar/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mytel/commerci/myanmar/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mytel/commerci/myanmar/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/nt/commerci/thailand/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/nt/commerci/thailand/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/p1/commerci/malaysia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/p1/commerci/malaysia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/seatel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/seatel/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/singtel/commerci/singapor/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/singtel/commerci/singapor/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart_ph/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart_ph/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/vowifi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/vowifi/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartone/commerci/hk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartone/commerci/hk/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/starhub/commerci/sg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/starhub/commerci/sg/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/telkomse/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/telkomse/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tm/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/thailand/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/thailand/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/volte/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tstar/commerci/tw/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tstar/commerci/tw/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/umobile/commerci/malaysia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/umobile/commerci/malaysia/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/viettel/commerci/vietnam/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/viettel/commerci/vietnam/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/vinaphon/commerci/vietnam/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/vinaphon/commerci/vietnam/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/xl/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/xl/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ytl/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ytl/commerci/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/test/er_iot/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/test/er_iot/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/test/nk_iot/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/test/nk_iot/mcfg_sw.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/oem_all.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/oem_all.txt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/oem_eea.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/oem_eea.txt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modemr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/modemr.jsn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/modemuw.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/modemuw.jsn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/otrpapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/otrpapp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/qdsp6m.qdb:$(TARGET_COPY_OUT_VENDOR)/firmware/qdsp6m.qdb \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/rtic.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/rtic.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/secauth.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/secauth.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap32.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap32.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/smplap64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/smplap64.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/soter64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/soter64.mdt \
     vendor/xiaomi/spes/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
     vendor/xiaomi/spes/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b08 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b09 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b10 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b19 \
     vendor/xiaomi/spes/proprietary/vendor/firmware/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b08:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b08 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b09:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b09 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b10:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b10 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b12:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b12 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b13:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b13 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b14:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b14 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b15:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b15 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b16:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b16 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b17:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b17 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b18:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b18 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b19:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b19 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b20:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b20 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b21:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b21 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b22:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b22 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b23:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b23 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b24:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b24 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b25:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b25 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b26:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b26 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b27:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b27 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b28:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b28 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b29:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b29 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b30:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b30 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b31:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b31 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b32:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b32 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b33:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b33 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b34:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b34 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.b35:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.b35 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adspr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adspr.jsn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adsps.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adsps.jsn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/adspua.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/adspua.jsn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tgl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tgl.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tglu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tglu.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tin.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tinu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tinu.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tmx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tmx.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tmxu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tmxu.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tsku.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tsku.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bd7tskuu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bd7tskuu.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdm7eu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdm7eu.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdm7euu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdm7euu.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.102:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.102 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.104:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.104 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.105:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.105 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.106:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.106 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.107:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.107 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.108:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.108 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.109:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.109 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.10e:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.10e \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.10f:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.10f \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.111:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.111 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.202:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.202 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.203:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.203 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.204:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.204 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.206:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.206 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b09:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b09 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b0a:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b0a \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b0b:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b0b \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b0d:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b0d \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b0e:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b0e \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b0f:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b0f \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b14:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b14 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b15:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b15 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b30:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b30 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b31:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b31 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b32:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b32 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b33:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b33 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b34:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b34 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b35:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b35 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b36:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b36 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b37:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b37 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.b38:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.b38 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlan.bin \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlant.202:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlant.202 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlanu.202:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlanu.202 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/bdwlanu.206:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/bdwlanu.206 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cardapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cardapp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b08:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b08 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b09:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b09 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.b11:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.b11 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdsp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdsp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/cdspr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/cdspr.jsn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/data.msc \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/featenab.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/featenab.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/fpctzapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/fpctzapp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/goodixfp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/goodixfp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptauuid.xml:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptauuid.xml \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/gptest.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/gptest.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/haventkn.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/haventkn.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/hdcpsrm.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/hdcpsrm.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/loadalgo.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/loadalgo.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mfido.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mfido.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/miriskm.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/miriskm.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/mlipay.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/mlipay.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b08:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b08 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b09:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b09 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b10:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b10 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b11:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b11 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b12:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b12 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b14:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b14 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b15:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b15 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b16:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b16 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b17:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b17 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b18:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b18 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b19:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b19 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b22:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b22 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b23:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b23 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b24:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b24 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b25:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b25 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b26:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b26 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b27:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b27 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b28:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b28 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.b29:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.b29 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/cmcc_sub/sr_dsds/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/cmcc_sub/sr_dsds/mcfg_hw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/7+7_mode/sr_dsds/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/7+7_mode/sr_dsds/mcfg_hw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/ss/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/ss/mcfg_hw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.txt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/af/cellc/commerci/safrica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/af/cellc/commerci/safrica/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/af/morocco/orange/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/af/morocco/orange/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/af/moroccot/commerci/ma/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/af/moroccot/commerci/ma/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/cellcom/commerci/israel/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/cellcom/commerci/israel/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dialog/commerci/sl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dialog/commerci/sl/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/htmobile/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/htmobile/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/idea/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/idea/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/jazz/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/jazz/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/mobitel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/mobitel/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ntc/commerci/nepal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ntc/commerci/nepal/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ooredoo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/ooredoo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/partner/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/partner/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/pelephon/commerci/israel/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/pelephon/commerci/israel/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/rakuten/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/rakuten/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/telenor/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/telenor/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/uzmobile/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/uzmobile/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/zong/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/zong/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/optus/commerci/au/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/optus/commerci/au/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/telstra/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/telstra/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/vodafone/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/aunz/vodafone/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_cm/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_cm/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_op/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/commerci/volte_op/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/agnss_lo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/agnss_lo/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/conf_vol/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/conf_vol/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/eps_only/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/eps_only/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/lpp_loct/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/lpp_loct/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_4r/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_4r/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_vo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/nsiot_vo/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/rrlp_loc/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/rrlp_loc/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/tgl_comb/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/tgl_comb/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/w_irat_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/lab/w_irat_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/hvolte_o/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/hvolte_o/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/openmkt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/openmkt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/volte_op/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/commerci/volte_op/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/cta/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/cta/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/eps_only/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/eps_only/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/noapn_vo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/noapn_vo/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_eps/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_eps/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_no_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/test_no_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/volte_co/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/lab/volte_co/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ctm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ctm/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/openmkt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/openmkt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/commerci/volte/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/lab/test/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/lab/test/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/test/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/test/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/1and1/commerci/de/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/1and1/commerci/de/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/2degress/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/2degress/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/at_comme/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/at_comme/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/bulgaria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/bulgaria/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/slovenia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/commerci/slovenia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/croatia_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/croatia_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/macedoni/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/macedoni/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/serbia_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/a1/serbia_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bhteleco/commerci/ba/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bhteleco/commerci/ba/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/latvia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/latvia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/lithuani/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bite/commerci/lithuani/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bouygues/commerci/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/bouygues/commerci/france/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/coop/commerci/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/coop/commerci/italy/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/cosmote/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/cosmote/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/digi/romania_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/digi/romania_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/austria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/austria/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/croatia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/croatia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/cz/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/cz/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/greece/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/greece/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/hungary/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/hungary/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/macedoni/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/macedoni/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/nl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/nl/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/pl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/pl/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/slovakia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/commerci/slovakia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/non_volt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/non_volt/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/romania_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/dt/volte/romania_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/du/commerci/uae/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/du/commerci/uae/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/eir/commerci/ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/eir/commerci/ireland/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/estonia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/estonia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/fi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/elisa/commerci/fi/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/egypt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/uae/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/etisalat/commerci/uae/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/free/volte/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/free/volte/france/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/gibtel/commerci/gibra/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/gibtel/commerci/gibra/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/austria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/austria/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/denmark/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/ireland/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/italy/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/se/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/se/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/h3g/commerci/uk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ice/commerci/norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ice/commerci/norway/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kpn/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kpn/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kyvistar/volte/ukraine/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/kyvistar/volte/ukraine/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lifecell/volte/ukraine/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lifecell/volte/ukraine/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lmt/commerci/latvia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/lmt/commerci/latvia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/meo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/meo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/moldcell/commerci/moldova/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/moldcell/commerci/moldova/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mtn/commerci/safrica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mtn/commerci/safrica/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/commerci/belarus/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/commerci/belarus/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/volte/serbia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/mts/volte/serbia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/nos/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/nos/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/czech/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/czech/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/slovakia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/commerci/slovakia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/uk_comme/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/o2/uk_comme/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ora/commerci/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ora/commerci/france/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/belgium/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/belgium/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/egypt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/france/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/france/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/group_no/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/group_no/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/luxembou/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/luxembou/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/poland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/poland/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/romania/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/romania/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/slovakia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/slovakia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/commerci/spain/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/moldova_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/orange/moldova_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/play/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/play/poland_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/plus/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/plus/poland_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/post/commerci/luxembou/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/post/commerci/luxembou/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/volte/luxembou/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/proximus/volte/luxembou/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/altice/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/altice/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/fr/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sfr/commerci/fr/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/spark/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/spark/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sunrise/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/sunrise/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/swisscom/commerci/swiss/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/swisscom/commerci/swiss/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tdc/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tdc/commerci/denmark/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/nl/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/nl/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tele2/commerci/sweden/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/de/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/de/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/spain/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/commerci/uk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/non_volt/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telefoni/non_volt/spain/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/argentin/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/argentin/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/slovenia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telekom/commerci/slovenia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telemach/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telemach/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenet/volte/belgium/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenet/volte/belgium/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/bulgaria/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/bulgaria/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/denmark/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/finland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/finland/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/hungary/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/hungary/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/monteneg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/monteneg/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/myanmar/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/myanmar/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/norway/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/serbia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/serbia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telenor/commerci/sweden/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/denmark/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/denmark/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/estonia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/estonia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/finland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/finland/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/lithuani/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/lithuani/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/norway/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/norway/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/sweden/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/telia/commerci/sweden/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tim/commerci/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tim/commerci/italy/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tmo/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/tmo/poland_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turkcell/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turkcell/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turktele/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/turktele/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/virgin/commerci/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/virgin/commerci/uk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vivacom/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vivacom/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/albania/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/albania/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/hungary/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/hungary/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/ireland/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/commerci/ireland/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/india_vo/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/india_vo/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/non_volt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/non_volt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ctc/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ctc/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/cz/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/cz/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/egypt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/germany/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/germany/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/gr/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/gr/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/italy/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/italy/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/netherla/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/netherla/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/portugal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/portugal/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ro/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/ro/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/safrica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/safrica/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/spain/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/spain/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/turkey/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/turkey/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/uk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/vodafone/volte/uk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/we/commerci/egypt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/we/commerci/egypt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/wind/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/wind/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/yoigo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/eu/yoigo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/kt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/kt/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/lgu/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/lgu/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/skt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/skt/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/tta/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/korea/tta/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/commerci/mx/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/commerci/mx/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/non_volt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/non_volt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/amx/volte/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/antel/uy/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/antel/uy/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/arg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/arg/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/brazil/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/brazil/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/chile/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/chile/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/colombia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/colombia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/cri/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/cri/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/dominica/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/dominica/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/ecuador/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/ecuador/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/guatemal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/guatemal/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/honduras/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/honduras/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/nicaragu/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/nicaragu/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/panama/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/panama/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/peru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/peru/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/puerto/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/puerto/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/salvador/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/salvador/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/uruguay/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/claro/commerci/uruguay/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/chile/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/chile/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/peru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/entel/commerci/peru/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/argentin/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/argentin/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/chile_co/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/chile_co/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/ecuador_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/ecuador_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/mx_comme/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/mx_comme/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/panama_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/panama_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/uruguay_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/movistar/uruguay_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/mx-att/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/mx-att/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/colombia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/colombia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/peru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/telefoni/commerci/peru/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/guatemal/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/guatemal/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tigo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tim/commerci/brazil/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/tim/commerci/brazil/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/vivo/commerci/brazil/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/vivo/commerci/brazil/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/colombia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/colombia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/latam/wom/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/bahrain_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/bahrain_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/betelco_/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/betelco_/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/viva/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/viva/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/zain/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/bahrain/zain/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/cyta/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/cyta/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/epic/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/epic/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/orange/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/orange/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/umniah/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/jordan/umniah/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/ooredoo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/ooredoo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/viva/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/viva/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/zain/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/kuwait/zain/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/omantel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/omantel/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/ooredoo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/oman/ooredoo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/qatar/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/qatar/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/mobily/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/mobily/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/salam/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/salam/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/zain/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/saudi/zain/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/stc/commerci/sa/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mea/stc/commerci/sa/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/altan/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/altan/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/axtel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/mexico/axtel/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/american/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/american/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/firstnet/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/firstnet/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/guam_cnm/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/guam_cnm/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/non_volt/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/non_volt/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/bell/commerci/ca/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/bell/commerci/ca/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/cbrs/commerci/us/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/cbrs/commerci/us/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/dish/commerci/us/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/dish/commerci/us/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/rogers/commerci/ca/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/rogers/commerci/ca/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/vowifi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/vowifi/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/telus/commerci/ca/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/telus/commerci/ca/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/poland_c/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/poland_c/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/uscc/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/uscc/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/imsless/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/imsless/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/beeline/gen_3gpp/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/beeline/gen_3gpp/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/megafon/commerci/ru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/megafon/commerci/ru/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/motiv/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/motiv/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/ru/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/mts/commerci/ru/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/sberbank/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/sberbank/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/tele2/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/russia/tele2/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/3hk/commerci/hk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/3hk/commerci/hk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/airtel/commerci/lanka/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/airtel/commerci/lanka/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ais/commerci/thailand/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ais/commerci/thailand/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/apt/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/apt/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/celcom/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/celcom/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/chunghwa/commerci/tw/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/chunghwa/commerci/tw/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/cuhk/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/cuhk/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/digi/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/digi/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dito/commerci/ph/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dito/commerci/ph/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/th/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/th/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/dtac/commerci/volte/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/fareasto/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/fareasto/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/globe/commerci/ph/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/globe/commerci/ph/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/hkt/commerci/hk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/hkt/commerci/hk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/indosat/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/indosat/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/m1/commerci/sg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/m1/commerci/sg/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/maxis/commerci/malaysia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/maxis/commerci/malaysia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/metfone/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/metfone/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mpt/commerci/myanmar/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mpt/commerci/myanmar/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mytel/commerci/myanmar/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/mytel/commerci/myanmar/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/nt/commerci/thailand/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/nt/commerci/thailand/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/p1/commerci/malaysia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/p1/commerci/malaysia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/seatel/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/seatel/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/singtel/commerci/singapor/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/singtel/commerci/singapor/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart_ph/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smart_ph/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/vowifi/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartfre/commerci/vowifi/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartone/commerci/hk/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/smartone/commerci/hk/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/starhub/commerci/sg/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/starhub/commerci/sg/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/telkomse/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/telkomse/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tm/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tm/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/thailand/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/thailand/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/volte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/truemove/commerci/volte/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tstar/commerci/tw/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/tstar/commerci/tw/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/umobile/commerci/malaysia/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/umobile/commerci/malaysia/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/viettel/commerci/vietnam/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/viettel/commerci/vietnam/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/vinaphon/commerci/vietnam/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/vinaphon/commerci/vietnam/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/xl/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/xl/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ytl/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/sea/ytl/commerci/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/test/er_iot/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/test/er_iot/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/test/nk_iot/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/test/nk_iot/mcfg_sw.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_all.txt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_all.txt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_eea.txt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_eea.txt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modemr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modemr.jsn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/modemuw.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/modemuw.jsn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/otrpapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/otrpapp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/qdsp6m.qdb:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/qdsp6m.qdb \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/rtic.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/rtic.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/secauth.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/secauth.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap32.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap32.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/smplap64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/smplap64.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/soter64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/soter64.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b08:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b08 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b09:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b09 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b10:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b10 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.b19:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.b19 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/venus.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b00 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b01 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b02 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b03 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b04 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b05 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b06 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.b07 \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/vsimapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/vsimapp.mdt \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/widevine.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/widevine.mbn \
-    vendor/xiaomi/spes/proprietary/vendor/firmware_mnt/image/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/image/wlanmdsp.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b00 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b01 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b02 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b03 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b04 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b05 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b06 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.b07 \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/vsimapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vsimapp.mdt \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/widevine.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mbn \
+    vendor/xiaomi/spes/proprietary/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.mbn \
     vendor/xiaomi/spes/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/xiaomi/spes/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/spes/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/xiaomi/spes/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/spes/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7t_aac_gc02m1_macro_ii.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7t_aac_gc02m1_macro_ii.bin \
@@ -1124,102 +1121,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    audio.primary.bengal \
-    vendor.qti.hardware.servicetracker@1.2-impl \
-    vulkan.adreno \
-    libCB \
-    libEvrcSwCodec \
-    libOpenCL \
-    libQcelp13SwCodec \
-    libadm \
-    libadreno_app_profiles \
-    libadreno_utils \
-    libadsp_default_listener \
-    libadsprpc \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
-    libalsautils \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
-    libats \
-    libaudio_log_utils \
-    libcapiv2svacnnvendor \
-    libcapiv2svarnnvendor \
-    libcapiv2uvvendor \
-    libcdfw \
-    libcdfw_remote_api \
-    libcdsp_default_listener \
-    libcdsprpc \
-    libdsd2pcm \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libgsl \
-    libkcl \
-    libkernelmanager \
-    libllvm-glnext \
-    libllvm-qcom \
-    libllvm-qgl \
-    liblx-ar_util \
-    liblx-osal \
-    libmcs \
-    libmdsprpc \
-    libmediautils_vendor \
-    libpalclient \
-    libqc2audio_base \
-    libqc2audio_basecodec \
-    libqc2audio_core \
-    libqc2audio_hooks \
-    libqc2audio_hwaudiocodec \
-    libqc2audio_platform \
-    libqc2audio_swaudiocodec \
-    libqc2audio_utils \
-    libqc2colorconvertfilter \
-    libqc2filter \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_filterbase \
-    libqcodec2_hooks \
-    libqcodec2_mockfilter \
-    libqcodec2_mockqc2filter \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
-    libqtigefar \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdsprpc \
-    libstreamparser \
-    libsubsystem_control \
-    libvmmem \
-    libasphere \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.AGMIPC@1.0 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.pal@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0 \
-    libqti_vndfwk_detect_vendor \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
     com.qti.flash.lm3644 \
@@ -1332,6 +1233,13 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
@@ -1356,10 +1264,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
+    vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.qti.hardware.wifidisplaysession@1.0-impl \
     vendor.xiaomi.hardware.displayfeature@1.0-impl \
     vendor.xiaomi.hardware.micharge@1.0-impl \
+    vulkan.adreno \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
@@ -1370,6 +1280,8 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
+    libCB \
+    libEvrcSwCodec \
     libFileMux_proprietary \
     libGPMTEEC_vendor \
     libGPQTEEC_vendor \
@@ -1378,8 +1290,10 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libHalSuperSensorServer \
     libI420colorconvert \
+    libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
+    libQcelp13SwCodec \
     libQtiRilLoadable \
     libSecureUILib \
     libStDrvInt \
@@ -1388,9 +1302,19 @@ PRODUCT_PACKAGES += \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
+    libadm \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libadsp_default_listener \
+    libadsprpc \
+    libagm \
     libaidenoiser \
     libalCFR \
     libanc_dc_base \
+    libar-acdb \
+    libar-gpr \
+    libar-gsl \
+    libar-pal \
     libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_hdr_detection \
@@ -1402,6 +1326,8 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
+    libats \
+    libaudio_log_utils \
     libbatching \
     libbitmlengine \
     libbluetooth_audio_session_qti \
@@ -1424,8 +1350,15 @@ PRODUCT_PACKAGES += \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
     libcapiv2svacnn \
+    libcapiv2svacnnvendor \
     libcapiv2svarnn \
+    libcapiv2svarnnvendor \
+    libcapiv2uvvendor \
     libcapiv2vop \
+    libcdfw \
+    libcdfw_remote_api \
+    libcdsp_default_listener \
+    libcdsprpc \
     libcert_parse.wpa_s \
     libchilog \
     libcne \
@@ -1451,15 +1384,16 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
     libembmsservice \
     libengineplugin \
     libesepmconfig \
     libesesbprovision \
-    libfmpal \
+    libfastcvdsp_stub \
+    libfastcvopt \
     libft2vendor \
-    libgarden \
     libgdtap \
     libgeofencing \
     libgf_ca \
@@ -1470,6 +1404,7 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     libgpt \
     libgpudataproducer \
+    libgsl \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
@@ -1477,16 +1412,20 @@ PRODUCT_PACKAGES += \
     libhistogram \
     libhta \
     libidl \
-    libipanat \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
     libjnihelper \
     libjpege \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
     liblmthermallistner \
     libloadalgo_stub \
     libloadtrusteduiapp \
@@ -1508,10 +1447,14 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
+    liblx-ar_util \
+    liblx-osal \
     libmapdata_api \
     libmasc \
+    libmcs \
     libmctfengine_stub \
     libmdmdetect \
+    libmdsprpc \
     libmiai_supernight \
     libmialgoengine \
     libmibokeh_712 \
@@ -1522,6 +1465,7 @@ PRODUCT_PACKAGES += \
     libmisight \
     libmlipay \
     libmlipay@1.1 \
+    libmm-color-convertor \
     libmm-hdcpmgr \
     libmmcamera_cac3 \
     libmmcamera_faceproc \
@@ -1561,11 +1505,31 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
+    libqc2audio_base \
+    libqc2audio_basecodec \
+    libqc2audio_core \
+    libqc2audio_hooks \
+    libqc2audio_hwaudiocodec \
+    libqc2audio_platform \
+    libqc2audio_swaudiocodec \
+    libqc2audio_utils \
+    libqc2colorconvertfilter \
+    libqc2filter \
     libqcbor \
     libqcc_file_agent \
     libqcc_sdk \
     libqcci_legacy \
     libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_filterbase \
+    libqcodec2_hooks \
+    libqcodec2_mockfilter \
+    libqcodec2_mockqc2filter \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
     libqcrilDataModule \
     libqcrilNr \
     libqcrilNrCellInfoModule \
@@ -1602,6 +1566,7 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqseed3 \
     libqsocket \
+    libqtigefar \
     libqtikeymaster4 \
     librcc \
     libreference-ril \
@@ -1611,6 +1576,12 @@ PRODUCT_PACKAGES += \
     libril-qc-radioconfig \
     librilqmimiscservices \
     librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
     libsdedrm \
     libsdk_sr \
     libsdm-color \
@@ -1619,6 +1590,7 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmextension \
     libsdmutils \
+    libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
@@ -1640,6 +1612,8 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssd \
     libstfactory-vendor \
+    libstreamparser \
+    libsubsystem_control \
     libswregistrationalgo \
     libswvdec \
     libsynergy_loc_api \
@@ -1657,7 +1631,9 @@ PRODUCT_PACKAGES += \
     libvendor.xiaomi.hardware.displayfeature@1.0 \
     libvideofilter_only \
     libvideotxr \
+    libvideoutils \
     libvidhance \
+    libvmmem \
     libwa_depth \
     libwa_dof \
     libwa_refocus \
@@ -1717,6 +1693,7 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     sensors.touch.detect \
     sns_client_example \
+    libasphere \
     libmisoundfx \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -1745,6 +1722,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1 \
     vendor.qti.gnss-V2-ndk \
     vendor.qti.gnss-service \
+    vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -1773,10 +1751,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dpmservice@1.0_vendor \
     vendor.qti.hardware.dpmservice@1.1 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.embmssl@1.0 \
     vendor.qti.hardware.embmssl@1.1 \
+    vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0 \
+    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
@@ -1829,6 +1810,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.ims.callcapability@1.0 \
@@ -1857,9 +1840,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
+    vendor.qti.qspmhal@1.0-impl \
+    vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.micharge@1.0 \
-    vendor.xiaomi.hardware.mlipay@1.0 \
     libSnpeHtpV68Skel \
     libSnpeHtpV69Skel \
     libadsp_jpege_skel \
@@ -1877,10 +1861,6 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_skel \
     misound_res_headphone \
     misound_res_spk \
-    libmmosal \
-    libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     lib-imsvideocodec \
@@ -1895,6 +1875,10 @@ PRODUCT_PACKAGES += \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmosal \
+    libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
     libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
@@ -1916,6 +1900,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     CACertService \
@@ -1967,7 +1952,6 @@ PRODUCT_PACKAGES += \
     deviceinfo-saidl.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
-    memtrack_qti.xml \
     qms-saidl.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
@@ -1979,10 +1963,6 @@ PRODUCT_PACKAGES += \
     SoterProvisioningTool \
     adpl \
     adsprpcd \
-    agmcap \
-    agmcompressplay \
-    agmhostless \
-    agmplay \
     battery_stats \
     batterysecret \
     cdsprpcd \
@@ -1990,7 +1970,6 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     consumerird \
-    cplay \
     diag-router \
     displayfeature \
     dpmQmiMgr \
@@ -1999,7 +1978,6 @@ PRODUCT_PACKAGES += \
     embmsslServer \
     engine-service \
     f2player \
-    garden_app \
     hdcp1prov \
     hdcp2p2prov \
     hvdcp_opti \
@@ -2014,7 +1992,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
@@ -2079,10 +2056,5 @@ PRODUCT_PACKAGES += \
     wfdservice64
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
-    vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
