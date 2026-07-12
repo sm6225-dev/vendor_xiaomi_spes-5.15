@@ -250,7 +250,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.battery_stats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.battery_stats.rc \
@@ -1243,6 +1242,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
+    audio.primary.bengal \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
@@ -1372,8 +1372,6 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdiagjni \
     libdisp-aba \
-    libdisplayconfig.qti \
-    libdisplaydebug \
     libdisplayfeature \
     libdisplayfeatureservice \
     libdisplayqos \
@@ -1409,7 +1407,6 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr_tm \
-    libhistogram \
     libhta \
     libidl \
     libipebpsstriping \
@@ -1582,14 +1579,11 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdk_sr \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
     libsdmextension \
-    libsdmutils \
     libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
@@ -1628,7 +1622,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
-    libvendor.xiaomi.hardware.displayfeature@1.0 \
     libvideofilter_only \
     libvideotxr \
     libvideoutils \
@@ -1987,11 +1980,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.1-service-qti \
     qcrilNrd \
-    vendor.display.color@1.0-service \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
