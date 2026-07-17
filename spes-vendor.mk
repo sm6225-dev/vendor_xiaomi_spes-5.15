@@ -1605,7 +1605,6 @@ PRODUCT_PACKAGES += \
     libvideotxr \
     libvideoutils \
     libvidhance \
-    libvmmem \
     libwa_depth \
     libwa_dof \
     libwa_refocus \
