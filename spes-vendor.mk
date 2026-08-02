@@ -629,6 +629,7 @@ PRODUCT_PACKAGES += \
     lib_bt_ble \
     lib_bt_bundle \
     libacdb-fts \
+    libacdbloader \
     libacdbrtac \
     libadiertac \
     libadreno_app_profiles \
